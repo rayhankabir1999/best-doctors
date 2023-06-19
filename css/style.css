@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: tahoma;
+}
+
+/* ====== navber-1 css start ====== */
+.nav_bg{
+    animation: bg 1s;
+    z-index: 999;
+    position: absolute;
+}
+@keyframes bg{
+    from{top: -100px;}
+    to{top: 0;}
+}
+
+.navbar{
+    background-color: rgb(4, 92, 255);
+    padding: 15px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.navbar-brand{
+    opacity: 0.3;
+    background-color: rgb(182, 248, 226);
+    padding: 2px 5px;
+    border: 2px solid blue;
+    animation: nav-logo 1s infinite;
+}
+
+
+@keyframes nav-logo{
+    0%{
+        opacity: 0.3;
+    }
+    100%{
+        opacity: 1;
+        background-color: rgb(94, 250, 198);
+        
+    }
+}
+
+.nav-item a{   
+    transition: all linear 0.2s;
+    margin: 0 5px;
+}
+
+.nav-item:first-child{
+    background-color: rgb(56, 135, 238);
+    border-radius: 5px;
+}
+
+.nav-item a:hover{
+    background-color: rgb(56, 135, 238);
+    transform: scale(1.1);
+}
+
+.get_btn{
+    transform: scale(1.1);
+    transition: all linear 0.2s;
+}
+
+.get_btn:hover{
+    transform: scale(1.2);
+}
+/* ====== navber-1 css end ====== */
+
+
+
+/* ====== banner css start ====== */
+.banner_img{
+    background-image: url('../images/banner-img.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;   
+    position: relative;
+    top: 20px;
+}
+
+.banner_img .banner_content{
+    padding: 200px 380px 130px 50px;
+}
+
+.banner_img .banner_content h1{
+    font-size: 55px;
+    color: rgb(184, 5, 255);
+    animation: banner-title 2s infinite;
+}
+
+@keyframes banner-title{
+    0%{
+        color: rgb(184, 5, 255);
+    }
+    50%{
+        color: rgb(255, 5, 213);
+    }
+    100%{
+        color: rgb(255, 5, 5);
+    }
+}
+
+.banner_img .banner_content p{   
+    color: black; 
+}
+/* ====== banner css end ====== */
+
+
+
+/* ====== choose us css start ====== */
+.choose_us_content{
+    background-color: rgb(88, 158, 250);
+    box-shadow: 2px 2px 10px 2px grey;
+    transition: all linear 0.2s;
+}
+
+.choose_us_content:hover{
+    background-color: rgb(0, 110, 255);
+}
+
+.choose_us_content h2{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.choose_us_content p{
+    font-size: 15px;
+}
+
+.choose_us_img img{
+    margin-top: 40px;
+    margin-left: 70px;
+    height: 350px;
+}
+/* ====== choose us css end ====== */
+
+
+
+/* ====== professional surgeons css start ====== */
+#professional_surgeons_section .bg-image{
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px grey;
+}
+
+#professional_surgeons_section .bg-image::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: -50%;
+    background-color: rgb(88, 158, 250);
+    opacity: 0.6;  
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+#professional_surgeons_section .bg-image:hover:before{
+    visibility: hidden;
+    left: -100%;   
+}
+
+#professional_surgeons_section .bg-image::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    bottom: 0%;
+    right: -50%;
+    background-color: rgb(88, 158, 250);
+    opacity: 0.6;  
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+#professional_surgeons_section .bg-image:hover:after{
+    visibility: hidden;
+    right: -100%;   
+}
+
+.pro-1{
+    text-align: center;
+    background-color: rgb(88, 158, 250);
+    padding: 18px 25px;
+    box-shadow: 2px 2px 10px 2px grey;
+    transition: all linear 0.3s;
+}
+
+.pro-1:hover{
+    background-color: rgb(3, 111, 252);
+}
+
+.pro-1{
+    text-align: center;
+    background-color: rgb(88, 158, 250);
+    padding: 9px 20px;
+    box-shadow: 2px 2px 10px 2px grey;
+    transition: all linear 0.3s;
+}
+
+.pro-1:hover{
+    background-color: rgb(5, 111, 250);
+}
+.professional-contentP
+
+.professional-content p{
+    font-size: 15px;
+}
+/* ====== professional surgeons css end ====== */
+
+
+
+/* ====== service section css start ====== */
+#service-sec{
+    margin: 70px 0;
+}
+.service-main-content h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+
+}
+.service-main-content p{
+    font-size: 14px;
+    padding: 0 100px;
+}
+.service-item{
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(5, 111, 250);
+    transition: all linear 0.3s;
+}
+.service-item:hover{
+    background-color: aqua;
+    box-shadow: 2px 2px 10px 2px grey;
+}
+.service-content{
+    margin-top: 10px;
+}
+.service-content p{
+    font-size: 14px;
+}
+/* ====== service section css end ====== */
+
+
+
+/* ====== gellary-sec css start ====== */
+#gellary-sec{
+    background-color: rgb(226, 218, 218);
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.gellary-img{
+    margin-bottom: 30px;
+    position: relative;
+}
+.overly{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    opacity: 0.7;
+    background-color: rgb(88, 158, 250);
+    transition: all linear 0.4s;
+    
+}
+.gellary-img:hover .overly{
+    visibility: visible;
+    width: 100%;
+}
+/* ====== gellary-sec css end ====== */
+
+
+
+/* ====== team-sec css start ====== */
+#team-sec{
+    background-color: rgb(88, 158, 250);
+    padding: 70px 0px;
+    text-align: center;
+}
+#team-sec h1{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+.team-text p{
+    font-size: 14px;
+    padding: 0 50px;
+}
+.team-text{
+    margin-top: 50px;
+}
+
+.team-text h4{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.team-img img{
+    border: 5px solid rgb(129, 129, 226);
+    border-radius: 50%;
+    transition: all linear 0.3s;
+}
+
+.team-img img:hover{
+    border-radius: 5%;
+}
+/* ====== team-sec css end ====== */
+
+
+/* ====== contact-sec css start ====== */
+#contact-form{
+    padding: 60px 230px;
+    text-align: center;
+}
+#contact-form h1{
+    font-weight: bold;
+    font-size: 50px;
+}
+form{
+    margin-top: 20px;
+    background-color: rgb(205, 235, 235);
+    padding: 30px;
+    border-radius: 8px;
+}
+/* ====== contact-sec css end ====== */
+
+
+/* ====== footer-sec css start ====== */
+#footer-sec{
+    background-color: #072135;
+    color: white;
+    padding: 50px 0;
+}
+.footer-content span{
+    font-size: 12px;
+}
+
+.footer-content p{
+    font-size: 12px;
+}
+
+.footer-content a{
+    text-decoration: none;
+    font-size: 12px;
+    color: white;
+}
+.footer-content a:hover{
+    color: red;
+}
+/* ====== footer-sec css end ====== */
+
+
